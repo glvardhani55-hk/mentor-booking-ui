@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MentorMatch | Mentor Sessions & Micro-Learning</title>
+    <meta
+      name="description"
+      content="Book 1:1 mentor sessions, learn fast with expert-led micro-learning. Frontend project built with HTML, CSS, Bootstrap."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons (Bootstrap Icons) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+          <span class="brand-dot"></span>
+          MentorMatch
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#mentors">Mentors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-warning btn-sm fw-semibold" href="#contact">
+                Get Started <i class="bi bi-arrow-right-short"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-section">
+      <div class="container py-5">
+        <div class="row align-items-center g-4 py-4">
+          <div class="col-lg-6">
+            <span class="badge rounded-pill text-bg-dark border border-light-subtle mb-3">
+              <i class="bi bi-lightning-charge"></i> Micro-learning + 1:1 mentorship
+            </span>
+            <h1 class="display-5 fw-bold lh-sm">
+              Learn faster with <span class="text-grad">mentor-led</span> sessions you can book in minutes.
+            </h1>
+            <p class="lead text-secondary mt-3">
+              A modern landing page prototype for mentor sessions, scheduling, pricing, and learner onboarding.
+              Built using <strong>HTML, CSS, Bootstrap</strong>.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a href="#mentors" class="btn btn-warning fw-semibold px-4">
+                Browse Mentors <i class="bi bi-person-workspace ms-1"></i>
+              </a>
+              <a href="#pricing" class="btn btn-outline-light fw-semibold px-4">
+                View Plans <i class="bi bi-box-seam ms-1"></i>
+              </a>
+            </div>
+
+            <div class="d-flex gap-4 mt-4 small text-secondary">
+              <div><i class="bi bi-check2-circle"></i> Flexible timings</div>
+              <div><i class="bi bi-check2-circle"></i> Output-oriented</div>
+              <div><i class="bi bi-check2-circle"></i> Responsive UI</div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-card p-4 p-md-5">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <p class="mb-1 text-secondary small">Next session</p>
+                  <h3 class="mb-0 fw-bold">UI Basics with Bootstrap</h3>
+                  <p class="mb-0 text-secondary">Today • 7:30 PM</p>
+                </div>
+                <span class="badge text-bg-success">Available</span>
+              </div>
+
+              <hr class="border-secondary-subtle my-4" />
+
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="mini-stat">
+                    <div class="icon"><i class="bi bi-clock"></i></div>
+                    <div>
+                      <div class="fw-semibold">45 mins</div>
+                      <div class="small text-secondary">Session length</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mini-stat">
+                    <div class="icon"><i class="bi bi-star-fill"></i></div>
+                    <div>
+                      <div class="fw-semibold">4.9/5</div>
+                      <div class="small text-secondary">Mentor rating</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mini-stat">
+                    <div class="icon"><i class="bi bi-clipboard-check"></i></div>
+                    <div>
+                      <div class="fw-semibold">Goal-based outcomes</div>
+                      <div class="small text-secondary">Roadmap + action items after session</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-warning fw-semibold w-100 mt-4" onclick="scrollToSection('contact')">
+                Book a Session <i class="bi bi-calendar2-check ms-1"></i>
+              </button>
+              <p class="small text-secondary mt-2 mb-0 text-center">
+                No payment flow included (UI prototype).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <section class="py-4 border-top border-bottom border-dark-subtle">
+      <div class="container">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-4 text-secondary small">Compatible, responsive layout tested for:</div>
+          <div class="col-md-8">
+            <div class="d-flex flex-wrap gap-2 justify-content-md-end">
+              <span class="chip"><i class="bi bi-phone"></i> Mobile</span>
+              <span class="chip"><i class="bi bi-laptop"></i> Desktop</span>
+              <span class="chip"><i class="bi bi-browser-chrome"></i> Chrome</span>
+              <span class="chip"><i class="bi bi-browser-firefox"></i> Firefox</span>
+              <span class="chip"><i class="bi bi-browser-safari"></i> Safari</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENTORS -->
+    <section id="mentors" class="section-pad">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">Featured Mentors</h2>
+            <p class="text-secondary mb-0">Cards, filters (UI), and availability labels — Bootstrap components + custom styling.</p>
+          </div>
+
+          <div class="d-flex gap-2">
+            <div class="input-group input-group-sm">
+              <span class="input-group-text bg-dark border-dark-subtle text-secondary"><i class="bi bi-search"></i></span>
+              <input id="mentorSearch" class="form-control bg-dark text-light border-dark-subtle" placeholder="Search mentors (e.g., HTML)" />
+            </div>
+            <select id="mentorFilter" class="form-select form-select-sm bg-dark text-light border-dark-subtle">
+              <option value="all" selected>All skills</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="bootstrap">Bootstrap</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="mentorGrid" class="row g-3">
+          <!-- Mentor Card 1 -->
+          <div class="col-md-6 col-lg-4 mentor-item" data-tags="html css bootstrap">
+            <div class="card card-dark h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="mb-1">Aarav Mehta</h5>
+                    <p class="text-secondary small mb-2">Front-end Mentor • UI Systems</p>
+                  </div>
+                  <span class="badge text-bg-success">Online</span>
+                </div>
+
+                <div class="d-flex gap-2 flex-wrap mb-3">
+                  <span class="badge rounded-pill text-bg-secondary">HTML</span>
+                  <span class="badge rounded-pill text-bg-secondary">CSS</span>
+                  <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  Helps you build pixel-clean landing pages, responsive grids, and reusable components.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-warning small">
+                    <i class="bi bi-star-fill"></i> 4.9 <span class="text-secondary">(120)</span>
+                  </div>
+                  <button class="btn btn-outline-warning btn-sm" onclick="openBooking('Aarav Mehta')">
+                    Book <i class="bi bi-arrow-right-short"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor Card 2 -->
+          <div class="col-md-6 col-lg-4 mentor-item" data-tags="css html">
+            <div class="card card-dark h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="mb-1">Neha Sharma</h5>
+                    <p class="text-secondary small mb-2">CSS Specialist • Layout & Animations</p>
+                  </div>
+                  <span class="badge text-bg-warning text-dark">Few slots</span>
+                </div>
+
+                <div class="d-flex gap-2 flex-wrap mb-3">
+                  <span class="badge rounded-pill text-bg-secondary">CSS</span>
+                  <span class="badge rounded-pill text-bg-secondary">HTML</span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  Focuses on clean layouts, accessibility, and small interactions that make UI feel premium.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-warning small">
+                    <i class="bi bi-star-fill"></i> 4.8 <span class="text-secondary">(89)</span>
+                  </div>
+                  <button class="btn btn-outline-warning btn-sm" onclick="openBooking('Neha Sharma')">
+                    Book <i class="bi bi-arrow-right-short"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor Card 3 -->
+          <div class="col-md-6 col-lg-4 mentor-item" data-tags="bootstrap css">
+            <div class="card card-dark h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="mb-1">Rohit Verma</h5>
+                    <p class="text-secondary small mb-2">Bootstrap Pro • Rapid Prototypes</p>
+                  </div>
+                  <span class="badge text-bg-danger">Busy</span>
+                </div>
+
+                <div class="d-flex gap-2 flex-wrap mb-3">
+                  <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+                  <span class="badge rounded-pill text-bg-secondary">CSS</span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  Helps you deliver output-oriented pages fast using grids, components, and best practices.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-warning small">
+                    <i class="bi bi-star-fill"></i> 4.7 <span class="text-secondary">(64)</span>
+                  </div>
+                  <button class="btn btn-outline-warning btn-sm" onclick="openBooking('Rohit Verma')">
+                    Book <i class="bi bi-arrow-right-short"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking Modal -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-dark">
+              <div class="modal-header border-dark-subtle">
+                <h5 class="modal-title">Book a Session</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-secondary small mb-2">Mentor</p>
+                <h6 id="selectedMentor" class="fw-bold mb-3">—</h6>
+
+                <div class="row g-2">
+                  <div class="col-6">
+                    <label class="form-label small text-secondary">Date</label>
+                    <input class="form-control bg-dark text-light border-dark-subtle" type="date" />
+                  </div>
+                  <div class="col-6">
+                    <label class="form-label small text-secondary">Time</label>
+                    <select class="form-select bg-dark text-light border-dark-subtle">
+                      <option>6:00 PM</option>
+                      <option>7:30 PM</option>
+                      <option>9:00 PM</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small text-secondary">Topic</label>
+                    <input class="form-control bg-dark text-light border-dark-subtle" placeholder="e.g., Bootstrap grid for landing page" />
+                  </div>
+                </div>
+
+                <div class="alert alert-secondary mt-3 mb-0 small">
+                  This is a UI prototype (no backend). Built using Bootstrap components + custom CSS.
+                </div>
+              </div>
+              <div class="modal-footer border-dark-subtle">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning fw-semibold" data-bs-dismiss="modal">Confirm (UI)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section-pad bg-section">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-7">
+            <h2 class="fw-bold mb-1">Weekly Schedule (Prototype)</h2>
+            <p class="text-secondary mb-0">
+              Demonstrates layout work with responsive tables + badges (and “compatible formats” thinking).
+            </p>
+          </div>
+          <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+            <span class="badge text-bg-dark border border-dark-subtle">Time zone: IST</span>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-dark table-hover align-middle rounded-3 overflow-hidden">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Topic</th>
+                <th>Level</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mon</td>
+                <td>HTML Semantics + Forms</td>
+                <td><span class="badge text-bg-secondary">Beginner</span></td>
+                <td>7:00 PM</td>
+                <td><span class="badge text-bg-success">Open</span></td>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td>CSS Layout: Flex + Grid</td>
+                <td><span class="badge text-bg-secondary">Intermediate</span></td>
+                <td>8:00 PM</td>
+                <td><span class="badge text-bg-success">Open</span></td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td>Bootstrap Components + Theming</td>
+                <td><span class="badge text-bg-secondary">Beginner</span></td>
+                <td>7:30 PM</td>
+                <td><span class="badge text-bg-warning text-dark">Few slots</span></td>
+              </tr>
+              <tr>
+                <td>Sun</td>
+                <td>Landing Page Review + Improvements</td>
+                <td><span class="badge text-bg-secondary">All</span></td>
+                <td>6:30 PM</td>
+                <td><span class="badge text-bg-danger">Waitlist</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section-pad">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold mb-1">Simple Pricing</h2>
+          <p class="text-secondary mb-0">Bootstrap cards + consistent spacing + clean hierarchy.</p>
+        </div>
+
+        <div class="row g-3 align-items-stretch">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-dark h-100">
+              <div class="card-body">
+                <h5 class="fw-bold">Starter</h5>
+                <p class="text-secondary small mb-3">For quick questions and guidance</p>
+                <div class="display-6 fw-bold">₹0</div>
+                <p class="text-secondary small">Community access</p>
+                <ul class="text-secondary small ps-3">
+                  <li>Newsletter tips</li>
+                  <li>Public resources</li>
+                  <li>UI roadmap</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-warning w-100 mt-2">Choose Starter</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-dark h-100 card-pop">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="fw-bold mb-0">Pro</h5>
+                  <span class="badge text-bg-warning text-dark">Popular</span>
+                </div>
+                <p class="text-secondary small mb-3">Best for consistent progress</p>
+                <div class="display-6 fw-bold">₹499</div>
+                <p class="text-secondary small">per month</p>
+                <ul class="text-secondary small ps-3">
+                  <li>2 mentor sessions</li>
+                  <li>Roadmap + tasks</li>
+                  <li>Weekly review</li>
+                </ul>
+                <a href="#contact" class="btn btn-warning w-100 fw-semibold mt-2">Choose Pro</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-dark h-100">
+              <div class="card-body">
+                <h5 class="fw-bold">Team</h5>
+                <p class="text-secondary small mb-3">For groups & clubs</p>
+                <div class="display-6 fw-bold">₹1999</div>
+                <p class="text-secondary small">per month</p>
+                <ul class="text-secondary small ps-3">
+                  <li>8 sessions</li>
+                  <li>Priority slots</li>
+                  <li>Monthly report</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-warning w-100 mt-2">Choose Team</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPETITOR ANALYSIS -->
+    <section class="section-pad bg-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-1">Competitor Analysis (Mini)</h2>
+            <p class="text-secondary mb-0">
+              A lightweight “research” section to show internship-aligned thinking.
+            </p>
+            <div class="mt-3">
+              <div class="info-block">
+                <h6 class="fw-semibold mb-1"><i class="bi bi-bullseye"></i> What works well</h6>
+                <p class="text-secondary small mb-0">
+                  Clear CTA above the fold, credibility signals (ratings), and frictionless booking UI.
+                </p>
+              </div>
+              <div class="info-block">
+                <h6 class="fw-semibold mb-1"><i class="bi bi-exclamation-triangle"></i> Common gaps</h6>
+                <p class="text-secondary small mb-0">
+                  Busy pages, inconsistent spacing, weak accessibility contrast, and unclear outcomes per session.
+                </p>
+              </div>
+              <div class="info-block">
+                <h6 class="fw-semibold mb-1"><i class="bi bi-lightbulb"></i> Improvements used here</h6>
+                <p class="text-secondary small mb-0">
+                  Strong hierarchy, consistent UI tokens (badges, chips), accessible contrast,
+                  and a goal-based session card.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card card-dark h-100">
+              <div class="card-body">
+                <h5 class="fw-bold mb-3">UI Checklist</h5>
+                <ul class="text-secondary small ps-3 mb-0">
+                  <li>Responsive grid: mobile → tablet → desktop</li>
+                  <li>Reusable components: cards, chips, badges</li>
+                  <li>Accessibility: visible focus + readable contrast</li>
+                  <li>Forms: validation messages + required fields</li>
+                  <li>Bootstrap components: navbar, modal, accordion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-pad">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold mb-1">FAQ</h2>
+          <p class="text-secondary mb-0">Bootstrap accordion + clean layout.</p>
+        </div>
+
+        <div class="accordion accordion-dark mx-auto" style="max-width: 900px;" id="faqAcc">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">
+                Is this a real product?
+              </button>
+            </h2>
+            <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+              <div class="accordion-body text-secondary">
+                This is a frontend UI prototype built for showcasing HTML/CSS/Bootstrap skills. No backend is included.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">
+                What skills are demonstrated?
+              </button>
+            </h2>
+            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+              <div class="accordion-body text-secondary">
+                Responsive Bootstrap layout, custom CSS styling, accessibility basics, component reuse, and small JS interactions.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">
+                Can this be extended?
+              </button>
+            </h2>
+            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+              <div class="accordion-body text-secondary">
+                Yes — you can add mentor data from JSON, booking flow, and API integration later.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-pad bg-section">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <h2 class="fw-bold mb-1">Contact / Apply</h2>
+            <p class="text-secondary mb-3">
+              Simple form UI with validation (frontend only).
+            </p>
+
+            <div class="card card-dark">
+              <div class="card-body">
+                <div class="d-flex gap-3 align-items-start">
+                  <div class="icon-badge"><i class="bi bi-code-slash"></i></div>
+                  <div>
+                    <div class="fw-semibold">Tech used</div>
+                    <div class="text-secondary small">HTML • CSS • Bootstrap • Vanilla JS</div>
+                  </div>
+                </div>
+                <hr class="border-dark-subtle my-3" />
+                <div class="d-flex gap-3 align-items-start">
+                  <div class="icon-badge"><i class="bi bi-rocket-takeoff"></i></div>
+                  <div>
+                    <div class="fw-semibold">Outcome</div>
+                    <div class="text-secondary small">A polished landing page that looks production-like</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="card card-dark h-100">
+              <div class="card-body p-4">
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label small text-secondary">Full name *</label>
+                      <input name="name" class="form-control bg-dark text-light border-dark-subtle" required />
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label small text-secondary">Email *</label>
+                      <input name="email" type="email" class="form-control bg-dark text-light border-dark-subtle" required />
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label small text-secondary">Interested in *</label>
+                      <select name="interest" class="form-select bg-dark text-light border-dark-subtle" required>
+                        <option value="" selected disabled>Select one</option>
+                        <option>Frontend internship</option>
+                        <option>Frontend job</option>
+                        <option>Mentor session</option>
+                      </select>
+                      <div class="invalid-feedback">Please select an option.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label small text-secondary">Message *</label>
+                      <textarea
+                        name="message"
+                        rows="4"
+                        class="form-control bg-dark text-light border-dark-subtle"
+                        required
+                        placeholder="Write a short note..."
+                      ></textarea>
+                      <div class="invalid-feedback">Please enter a message.</div>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-warning fw-semibold mt-3" type="submit">
+                    Submit <i class="bi bi-send ms-1"></i>
+                  </button>
+
+                  <div id="formToast" class="alert alert-success mt-3 d-none mb-0">
+                    Submitted (UI). I’ll respond soon!
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-dark-subtle">
+      <div class="container d-flex flex-wrap gap-2 justify-content-between align-items-center">
+        <div class="text-secondary small">
+          © <span id="year"></span> MentorMatch • Frontend UI Prototype
+        </div>
+        <div class="d-flex gap-2">
+          <a class="footer-link" href="#mentors">Mentors</a>
+          <a class="footer-link" href="#pricing">Pricing</a>
+          <a class="footer-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
